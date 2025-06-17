@@ -35,7 +35,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "sharpify-backend"
-          entrypoint: "./src/main.ts"
+          entrypoint: ".../src/main.ts"
           root: "./"
           
           
