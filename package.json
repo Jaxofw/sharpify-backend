@@ -1,0 +1,31 @@
+{
+  "name": "sharpify-backend",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/main.ts",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"./src/**/*.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.0",
+    "dotenv": "^16.5.0",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/lodash": "^4.17.17",
+    "@types/node": "^22.15.30",
+    "eslint": "^9.28.0",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.0"
+  }
+}
