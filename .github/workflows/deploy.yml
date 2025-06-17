@@ -29,16 +29,13 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm run install"
-
-      - name: Build step
-        run: "npm run build"
+        run: "npm install"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "sharpify-backend"
           entrypoint: "src/main.ts"
-          root: "build"
+          root: ""
           
           
